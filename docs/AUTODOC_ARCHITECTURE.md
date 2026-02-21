@@ -44,6 +44,7 @@ graph TD
 
 ## Project Structure
 
+```text
 /
 ├── src/                # Código fuente principal
 │   ├── app/           # Rutas y páginas (App Router)
@@ -56,6 +57,7 @@ graph TD
 │       └── SalesChart.tsx # Gráfico de evolución de ventas (Recharts)
 ├── docs/               # Documentación y planes
 └── public/             # Assets estáticos y recursos
+```
 
 ### Anatomía del Proyecto
 - **Patrón**: Implementación moderna de Next.js centrada en componentes atómicos y de composición.

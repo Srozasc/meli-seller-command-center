@@ -27,7 +27,7 @@ Este workflow está diseñado para realizar una ingeniería inversa rápida de u
 - El documento debe incluir:
     - **Tech Stack Overview**: Tabla con tecnologías clave.
     - **Architecture Diagram (Mermaid)**: Un diagrama de bloques o grafo (usando sintaxis `mermaid`) que visualice la relación entre componentes, páginas y el flujo de datos/estilos.
-    - **Project Structure**: Árbol de directorios anotado con el propósito de cada carpeta.
+    - **Project Structure**: Árbol de directorios anotado con el propósito de cada carpeta (debe estar dentro de un bloque de código ```text para evitar colapsos de línea).
     - **Quick Start**: Basado en los scripts encontrados.
 
 ### 5. Resumen de Hallazgos
