@@ -48,9 +48,9 @@ graph TD
 /
 ├── src/                # Código fuente principal
 │   ├── app/           # Rutas y páginas (App Router)
-│   │   ├── layout.tsx # Envoltura global y Navbar
-│   │   ├── page.tsx   # Dashboard principal (Seller Command Center)
-│   │   └── globals.css # Estilos globales y paleta MeLi
+│   │   ├── layout.tsx # Envoltura global y Navbar [Hotspot]
+│   │   ├── page.tsx   # Dashboard principal (Seller Command Center) [Entry]
+│   │   └── globals.css # Estilos globales y paleta MeLi [Style]
 │   └── components/     # Componentes de UI reutilizables
 │       ├── MetricCard.tsx # Tarjetas de indicadores de KPI
 │       ├── Navbar.tsx     # Barra de navegación con branding MeLi
@@ -64,9 +64,9 @@ graph TD
 - **Entry Point**: `src/app/page.tsx` es el nodo central donde converge la lógica del dashboard.
 - **Estética**: Basada en variables de CSS personalizadas en `globals.css` que definen la identidad visual de Mercado Libre.
 
-## Quick Start
+## Quick Start (Scripts Identificados)
 
-1. **Instalar dependencias**: `npm install`
-2. **Desarrollo**: `npm run dev` (Disponible en http://localhost:3000)
-3. **Construcción**: `npm run build`
-4. **Producción**: `npm run start`
+- **Desarrollo**: `npm run dev`
+- **Construcción**: `npm run build`
+- **Producción**: `npm run start`
+- **Calidad**: `npm run lint`
