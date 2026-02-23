@@ -1,41 +1,22 @@
-# AUTODOC: Dependencies (Inventario Tecnológico)
+# AUTODOC: Dependencies (Ecosistema Tecnológico)
 
-Este documento desglosa el stack tecnológico del proyecto, organizando las herramientas por su función crítica en el sistema.
+Análisis de las librerías y herramientas que sostienen la ejecución del proyecto.
 
-## 1. Inventario por Categoría
+## 1. Inventario Tecnológico
 
-### Core Framework
-| Librería | Versión | Rol |
-| :--- | :--- | :--- |
-| **Next.js** | `16.1.6` | Motor de ruteo y rendering (App Router). |
-| **React** | `19.2.3` | Base para la construcción de la UI. |
-| **TypeScript** | `^5` | Lenguaje principal con tipado estático. |
+### Fundamentos
+- **Next.js (16.1.6)**: Proporciona la infraestructura de ruteo y optimización de renderizado.
+- **React (19.2.3)**: Define el modelo de programación basado en componentes.
+- **TypeScript**: Asegura la integridad del código mediante la validación de tipos en tiempo de desarrollo.
 
-### UI & User Experience
-| Librería | Versión | Rol |
-| :--- | :--- | :--- |
-| **Tailwind CSS** | `^4` | Estilizado utility-first optimizado. |
-| **Framer Motion** | `^12.34.3` | Orquestación de animaciones y micro-interacciones. |
-| **Lucide React** | `^0.575.0` | Set de iconos vectoriales consistentes. |
+### Interfaz y Experiencia (UX)
+- **Tailwind CSS (4.0)**: Motor de estilos de última generación para un diseño ágil y consistente.
+- **Framer Motion**: Utilizado para las transiciones suaves y la sensación de aplicación premium.
+- **Lucide React**: Biblioteca de iconos estandarizada.
 
-### Data & Visualización
-| Librería | Versión | Rol |
-| :--- | :--- | :--- |
-| **Recharts** | `^3.7.0` | Generación de gráficos reactivos y accesibles. |
-
-### DevOps & Quality
-| Librería | Versión | Rol |
-| :--- | :--- | :--- |
-| **ESLint** | `^9` | Análisis estático y mantenimiento de estándares. |
-| **@tailwindcss/postcss**| `^4` | Procesamiento y optimización de estilos CSS. |
-
----
+### Análisis y Datos
+- **Recharts**: Encargado de transformar series numéricas en gráficos visuales interactivos.
 
 ## 2. Análisis de Mantenibilidad
 
-El proyecto se encuentra en un estado de alta modernidad. El uso de Next.js 16 y React 19 indica que el código está listo para las últimas optimizaciones de rendimiento. La adopción de Tailwind CSS v4 asegura un pipeline de estilos extremadamente ligero.
-
-### Piezas Críticas para el Desarrollador
-- **App Router (Next.js 16)**: Uso de Server Components para optimización de carga.
-- **Framer Motion**: Vital para mantener la sensación premium de la marca.
-- **Recharts**: Estándar para el panel de analíticas.
+El proyecto utiliza versiones de vanguardia (Next 16, React 19), lo que garantiza acceso a las últimas optimizaciones de rendimiento y seguridad. La estructura de dependencias es magra, evitando el "bloatware" y centrándose en librerías estándar de la industria.

@@ -1,35 +1,25 @@
 # AUTODOC: Entry Points (Puntos de Entrada)
 
-Este documento identifica y analiza los archivos críticos donde comienza la ejecución y se define la orquestación del sistema.
+Este documento detalla los archivos críticos donde se inicializa la carga y la lógica del Seller Command Center.
 
 ## 1. Lista de Entry Points
 
-| Archivo | Ubicación | Rol Técnico |
+| Archivo | Ubicación | Función Crítica |
 | :--- | :--- | :--- |
-| **Root Layout** | `src/app/layout.tsx` | Punto de entrada del Server-side. Define el shell global y metadatos. |
-| **Dashboard Entry** | `src/app/page.tsx` | Punto de entrada del Client-side para la vista principal. Orquestador de lógica. |
-| **Style Entry** | `src/app/globals.css` | Punto de entrada del sistema de diseño y tokens visuales. |
+| **Root Layout** | `src/app/layout.tsx` | Define el envoltorio HTML, carga las fuentes y monta la navegación persistente. |
+| **Dashboard** | `src/app/page.tsx` | Controlador principal de la vista del vendedor. Orquesta la IA y las métricas. |
+| **Styling Core**| `src/app/globals.css` | Define los tokens de diseño (colores, sombras, efectos glass) que definen la marca. |
 
----
+## 2. Flujo de Ejecución
 
-## 2. Flujo de Carga (Bootstrapping)
+1.  **Bootstrapping Inicial**: Next.js procesa el `layout.tsx` para establecer el marco visual y SEO.
+2.  **Carga de Identidad**: Se inyectan las variables CSS de `globals.css` que configuran el "look & feel" de Mercado Libre.
+3.  **Montaje de Componentes**:
+    - El `Navbar` se renderiza para proporcionar contexto de navegación.
+    - La `page.tsx` despliega dinámicamente las tarjetas de métricas, el gráfico de ventas y el módulo del AI Advisor.
+4.  **Activación de Interactividad**: Se disparan las animaciones de Framer Motion y se inicializan los gráficos de Recharts.
 
-La aplicación sigue una secuencia de inicialización optimizada para Next.js:
+## 3. Configuraciones Críticas
 
-1.  **Shell Inicial**: El servidor procesa `layout.tsx`, estableciendo la estructura base (`<html>`, `<body>`) y los metadatos SEO globales.
-2.  **Inyección Estética**: Se carga `globals.css`, aplicando instantáneamente la paleta de colores corporativa y los estilos base.
-3.  **Montaje Global**: El componente `Navbar` se renderiza de forma persistente, proporcionando el marco de identidad visual.
-4.  **Hidratación de Lógica**: `page.tsx` se carga en el cliente como un componente reactivo, activando el AI Advisor y los gráficos de SalesChart.
-
----
-
-## 3. Configuraciones Globales Críticas
-
-- **Metadatos SEO**: Centralizados en el objeto `metadata` de `layout.tsx`. Define el título "Seller Command Center" y descriptores de búsqueda.
-- **Design Tokens**: Ubicados en `globals.css`. Configura las variables para el azul/amarillo de Mercado Libre y los efectos de transparencia (glassmorphism).
-- **Client Directives**: La página principal utiliza `"use client"` para permitir el uso de hooks de React y la interactividad de librerías como Recharts.
-
----
-
-### Archivos Cerebro
-Los archivos mencionados arriba constituyen el núcleo de la aplicación. Cualquier cambio en estos archivos tiene un impacto sistémico en el ruteo, el diseño o la lógica de negocio fundamental del laboratorio.
+- **Branding**: El `Navbar` centraliza el logotipo y la experiencia de búsqueda global.
+- **AI Logic**: Los umbrales que activan las sugerencias de la IA se encuentran definidos directamente dentro de la página principal para esta fase de prototipo.

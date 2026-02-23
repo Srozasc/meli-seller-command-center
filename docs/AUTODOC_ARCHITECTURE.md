@@ -1,72 +1,60 @@
 # AUTODOC: Arquitectura del Proyecto
 
-Este documento ha sido generado automáticamente mediante el workflow `doc-arqueologo`.
+Este documento proporciona una visión técnica de alto nivel del Seller Command Center, analizando su composición y patrones de diseño.
 
 ## Tech Stack Overview
 
 | Tecnología | Versión | Propósito |
 | :--- | :--- | :--- |
-| **Next.js** | 16.1.6 | Framework Core (App Router) |
-| **React** | 19.2.3 | Librería de UI |
-| **TypeScript** | 5.x | Lenguaje de programación |
-| **Tailwind CSS** | 4.x | Estilizado (Utility-first) |
-| **Recharts** | 3.7.0 | Visualización de datos |
-| **Lucide React** | 0.575.0 | Iconografía |
-| **Framer Motion** | 12.34.3 | Animaciones |
+| **Next.js** | 16.1.6 | Framework principal (App Router). |
+| **React** | 19.2.3 | Motor de renderizado de componentes. |
+| **TypeScript** | 5.x | Lenguaje con tipado estático para robustez del código. |
+| **Tailwind CSS** | 4.x | Sistema de estilos basado en utilidades y tokens. |
+| **Framer Motion** | 12.34.3 | Motor de animaciones para la experiencia premium. |
+| **Recharts** | 3.7.0 | Visualización de datos complejos. |
 
 ## Architecture Diagram
 
-Este diagrama representa la jerarquía de componentes y el flujo de diseño del Seller Command Center:
-
 ```mermaid
 graph TD
-    subgraph App_Shell [Estructura Global]
+    subgraph App_Core [Capa de Aplicación]
         L[Root Layout] --> N[Navbar]
+        L --> P[Dashboard Page]
     end
     
-    subgraph Dashboard_Page [Página Principal]
-        L --> P[Page: Dashboard]
+    subgraph Components_Layer [Capa de UI]
         P --> MC[MetricCard]
         P --> SC[SalesChart]
+        P --> AI[AI Advisor Section]
     end
     
-    subgraph Shared_Assets [Recursos Compartidos]
-        CSS[globals.css: MeLi Design Tokens] -.-> L
-        LIB_R[Recharts] --> SC
-        LIB_L[Lucide Icons] --> MC
-        LIB_L --> N
+    subgraph Foundation [Base del Sistema]
+        CSS[Design Tokens: globals.css] -.-> L
+        TS[Type Definitions] -.-> P
     end
 
-    style App_Shell fill:#f9f9f9,stroke:#333,stroke-width:2px
-    style Dashboard_Page fill:#fff7d1,stroke:#ffe600,stroke-width:2px
-    style Shared_Assets fill:#e1f5fe,stroke:#3483fa,stroke-width:2px
+    style App_Core fill:#f9f9f9,stroke:#333
+    style Components_Layer fill:#fff7d1,stroke:#ffe600
+    style Foundation fill:#e1f5fe,stroke:#3483fa
 ```
 
 ## Project Structure
 
 ```text
 /
-├── src/                # Código fuente principal
-│   ├── app/           # Rutas y páginas (App Router)
-│   │   ├── layout.tsx # Envoltura global y Navbar [Hotspot]
-│   │   ├── page.tsx   # Dashboard principal (Seller Command Center) [Entry]
-│   │   └── globals.css # Estilos globales y paleta MeLi [Style]
-│   └── components/     # Componentes de UI reutilizables
-│       ├── MetricCard.tsx # Tarjetas de indicadores de KPI
-│       ├── Navbar.tsx     # Barra de navegación con branding MeLi
-│       └── SalesChart.tsx # Gráfico de evolución de ventas (Recharts)
-├── docs/               # Documentación y planes
-└── public/             # Assets estáticos y recursos
+├── src/
+│   ├── app/           # Orquestación de rutas y estilos globales
+│   │   ├── layout.tsx # Shell persistente (Navbar + Metadatos)
+│   │   ├── page.tsx   # Punto de convergencia del Dashboard
+│   │   └── globals.css # Fuente de verdad de la identidad visual
+│   └── components/     # Unidades funcionales reutilizables
+│       ├── MetricCard.tsx # Visualizador de KPIs
+│       ├── Navbar.tsx     # Cabecera corporativa lucubrada
+│       └── SalesChart.tsx # Motor gráfico de analíticas
+├── docs/               # Artefactos de documentación generados
+└── public/             # Recursos estáticos y branding
 ```
 
 ### Anatomía del Proyecto
-- **Patrón**: Implementación moderna de Next.js centrada en componentes atómicos y de composición.
-- **Entry Point**: `src/app/page.tsx` es el nodo central donde converge la lógica del dashboard.
-- **Estética**: Basada en variables de CSS personalizadas en `globals.css` que definen la paleta oficial de Mercado Libre.
-
-## Quick Start (Scripts Identificados)
-
-- **Desarrollo**: `npm run dev`
-- **Construcción**: `npm run build`
-- **Producción**: `npm run start`
-- **Calidad**: `npm run lint`
+- **Patrón**: Arquitectura orientada a componentes en Next.js, utilizando Server Components por defecto pero habilitando interactividad mediante `"use client"` en nodos específicos.
+- **Entry Point**: El archivo `src/app/page.tsx` es el cerebro donde se inyectan los datos mock y se orquesta la lógica del AI Advisor.
