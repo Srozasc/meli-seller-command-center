@@ -11,17 +11,25 @@ graph LR
     Build -- Pass --> Vercel[Vercel Deployment]
     Vercel --> Online((Sistema Online))
     
-    style Push fill:#f0f0f0,stroke:#333
-    style Online fill:#e1f5fe,stroke:#3483fa
+    style Push fill:#ffffff,stroke:#333,color:#333
+    style CI fill:#f5f5f5,stroke:#9e9e9e,color:#333
+    style Build fill:#fffde7,stroke:#fbc02d,color:#333
+    style Vercel fill:#f5f5f5,stroke:#9e9e9e,color:#333
+    style Online fill:#e1f5fe,stroke:#3483fa,color:#333
 ```
 
 ## 2. Fases del Flujo
 
 ### Fase 1: Integración (CI)
-Ejecución de auditorías estáticas (ESLint) para garantizar que el código enviado a la rama principal cumple con los estándares de calidad definidos.
+Ejecución de auditorías estáticas (ESLint) para garantizar calidad de código.
 
 ### Fase 2: Construcción (Build)
-Compilación del código TypeScript y generación de los assets estáticos. Se procesan los componentes de servidor de Next.js para optimizar la carga inicial.
+Compilación de TypeScript y generación de assets optimizados para Next.js.
 
 ### Fase 3: Despliegue (CD)
-Actualización automática de los servidores en el edge mediante Vercel, asegurando que la última versión del Seller Command Center esté disponible globalmente sin tiempo de inactividad.
+Actualización automática de servidores edge mediante Vercel (CD).
+
+---
+
+## 3. Criterios de Éxito
+Solo el código que pasa todas las validaciones de tipos y estilo es desplegado al entorno de producción.

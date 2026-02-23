@@ -4,8 +4,6 @@ Detalle de funcionamiento del motor de inteligencia artificial del Seller Comman
 
 ## 1. Arquitectura del Advisor
 
-El flujo de procesamiento de datos para la generación de recomendaciones sigue la siguiente estructura:
-
 ```mermaid
 graph LR
     subgraph Data_Inputs [Entrada]
@@ -23,14 +21,25 @@ graph LR
     subgraph UI_Output [Salida]
         R1 --> Insight[Card: Sugerir Envío a Full]
     end
+
+    style Data_Inputs fill:#f5f5f5,stroke:#9e9e9e,color:#333
+    style Engine fill:#fff7d1,stroke:#ffe600,color:#333
+    style UI_Output fill:#e1f5fe,stroke:#3483fa,color:#333
+    style V color:#333
+    style T color:#333
+    style S color:#333
+    style D color:#333
+    style R1 color:#333
+    style R2 color:#333
+    style Insight color:#333
 ```
 
 ## 2. Definición del Modelo
 
 ### Criterios de Activación
-- **Motor de Oportunidad**: Se activa cuando la tendencia de demanda supera el 30%. El sistema infiere que el modelo de cumplimiento propio del vendedor será insuficiente y sugiere delegar en el centro de distribución del marketplace (Full).
-- **Control de Riesgo**: Monitorea el ratio de ventas/stock para alertar sobre productos que están cerca de agotar existencias, protegiendo así la reputación del vendedor.
+- **Oportunidad**: Tendencia de demanda > 30% dispara sugerencia de modelo FULL.
+- **Riesgo**: Ratio ventas/stock bajo genera alertas de reposición inmediata.
 
 ## 3. Catálogo de Recomendaciones
-- **Sugerencia de Envío a Full**: Insight proactivo para maximizar exposición y eficiencia.
-- **Alertas de Stock Crítico**: Notificaciones tácticas para evitar la interrupción de ventas.
+- **Sugerencia de Envío a Full**: Maximiza exposición y eficiencia logística.
+- **Alertas de Stock Crítico**: Protege la continuidad de las ventas y la reputación.

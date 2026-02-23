@@ -33,9 +33,15 @@ graph TD
         TS[Type Definitions] -.-> P
     end
 
-    style App_Core fill:#f9f9f9,stroke:#333
-    style Components_Layer fill:#fff7d1,stroke:#ffe600
-    style Foundation fill:#e1f5fe,stroke:#3483fa
+    style App_Core fill:#f9f9f9,stroke:#333,color:#333
+    style Components_Layer fill:#fff7d1,stroke:#ffe600,color:#333
+    style Foundation fill:#e1f5fe,stroke:#3483fa,color:#333
+    style L color:#333
+    style N color:#333
+    style P color:#333
+    style MC color:#333
+    style SC color:#333
+    style AI color:#333
 ```
 
 ## Project Structure
@@ -49,12 +55,12 @@ graph TD
 │   │   └── globals.css # Fuente de verdad de la identidad visual
 │   └── components/     # Unidades funcionales reutilizables
 │       ├── MetricCard.tsx # Visualizador de KPIs
-│       ├── Navbar.tsx     # Cabecera corporativa lucubrada
+│       ├── Navbar.tsx     # Cabecera corporativa
 │       └── SalesChart.tsx # Motor gráfico de analíticas
 ├── docs/               # Artefactos de documentación generados
 └── public/             # Recursos estáticos y branding
 ```
 
 ### Anatomía del Proyecto
-- **Patrón**: Arquitectura orientada a componentes en Next.js, utilizando Server Components por defecto pero habilitando interactividad mediante `"use client"` en nodos específicos.
+- **Patrón**: Arquitectura orientada a componentes en Next.js, utilizando Server Components por defecto pero habilitando interactividad mediante `"use client"` en componentes de UI.
 - **Entry Point**: El archivo `src/app/page.tsx` es el cerebro donde se inyectan los datos mock y se orquesta la lógica del AI Advisor.

@@ -1,10 +1,8 @@
 # AUTODOC: User Journeys (Flujos de Usuario)
 
-Este documento describe las rutas críticas que un vendedor recorre dentro del Seller Command Center para optimizar su operación.
+Este documento describe las rutas críticas que un vendedor recorre dentro del Seller Command Center.
 
 ## 1. Mapa de Flujos Funcionales
-
-El siguiente diagrama detalla la interacción del usuario con las capacidades de inteligencia artificial y gestión del dashboard:
 
 ```mermaid
 graph TD
@@ -21,22 +19,29 @@ graph TD
     Persistent_Nav --> Search[Búsqueda Global]
     Persistent_Nav --> Notifications[Centro de Notificaciones]
     Persistent_Nav --> Selling[Flujo de Venta]
+
+    style Start fill:#f9f9f9,stroke:#333,color:#333
+    style Dashboard fill:#e1f5fe,stroke:#3483fa,color:#333
+    style AI_Insight fill:#fff7d1,stroke:#ffe600,color:#333
+    style Suggestion fill:#fff7d1,stroke:#ffe600,color:#333
+    style Full_Action fill:#e8f5e9,stroke:#2e7d32,color:#333
+    style Inventory_Alerts fill:#ffebee,stroke:#c62828,color:#333
+    style Detail_View fill:#ffebee,stroke:#c62828,color:#333
+    style Persistent_Nav fill:#f5f5f5,stroke:#9e9e9e,color:#333
 ```
 
 ## 2. Descripción de Rutas Críticas
 
 ### A. Flujo de Optimización Logística (Predictivo)
-Es el camino de mayor valor estratégico. El sistema detecta proactivamente una oportunidad de mercado y guía al vendedor hacia la acción.
 1. **Detección**: El motor de IA identifica SKUs con tendencia de crecimiento > 30%.
 2. **Visualización**: Se presenta un insight proactivo en el área del "AI Advisor".
-3. **Conversión**: El usuario valida la sugerencia y dispara el proceso de envío a centros de distribución (Full).
+3. **Acción**: El usuario valida la sugerencia y dispara el proceso de envío a centros de distribución (Full).
 
 ### B. Monitoreo Táctico de Inventario
-Camino de control para asegurar la continuidad de las ventas.
 1. **Identificación**: El usuario detecta indicadores en rojo en la tarjeta de "Stock Crítico".
-2. **Análisis**: Revisa la lista de alertas para priorizar la reposición de productos con menor cobertura.
+2. **Análisis**: Revisa la lista de alertas para priorizar la reposición de productos.
 
 ---
 
 ## 3. Resumen de Soporte Operativo
-El software soporta actualmente un ciclo cerrado de **Detección de Datos -> Sugerencia Inteligente -> Acción Comercial**, mitigando el riesgo de pérdida de ventas por falta de stock.
+El software soporta actualmente un ciclo cerrado de **Detección -> Sugerencia -> Acción**, mitigando el riesgo de pérdida de ventas por quiebre de stock.
