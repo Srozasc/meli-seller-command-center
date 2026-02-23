@@ -20,6 +20,7 @@ Este workflow visualiza el pipeline de automatización que lleva el código desd
 
 ### Instrucciones de Estilo (No incluir en el documento)
 - **Profesionalismo**: Evitar el uso de iconos o emojis innecesarios en el documento final para mantener una estética limpia y técnica.
+- **Contraste en Diagramas**: Al usar Mermaid, define siempre el color de la fuente (`color:#...`) en los estilos (`style`) para garantizar la legibilidad sobre el fondo del nodo.
 
 ### 4. Resumen
 - Resume el nivel de automatización y la robustez del proceso de entrega.

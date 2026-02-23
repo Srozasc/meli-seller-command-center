@@ -42,4 +42,5 @@ Analizar la intención del usuario respecto a la documentación del proyecto y e
 
 ## Restricciones
 - No copies las "Instrucciones de Estilo" o notas internas dentro de los archivos de documentación finales.
+- **Contraste en Mermaid**: Al generar diagramas, asegúrate de que el texto sea legible aplicando estilos (`style Node color:#...`) que contrasten con el fondo del nodo.
 - No inventes información; si un recurso no es detectable, documéntalo como "Pendiente de configuración" o "No detectado".

@@ -20,6 +20,7 @@ Este workflow analiza las páginas y la interactividad para reconstruir los fluj
 
 ### Instrucciones de Estilo (No incluir en el documento)
 - **Profesionalismo**: Evitar el uso de iconos o emojis innecesarios en el documento final para mantener una estética limpia y técnica.
+- **Contraste en Diagramas**: Al usar Mermaid, define siempre el color de la fuente (`color:#...`) en los estilos (`style`) para garantizar la legibilidad sobre el fondo del nodo.
 
 ### 4. Resumen
 - Indica al usuario cuáles son los caminos críticos que el software soporta actualmente.
