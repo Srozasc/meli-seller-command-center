@@ -7,7 +7,9 @@ Este documento mapea el sistema de componentes del proyecto, facilitando la reut
 ### `MetricCard`
 - **Ubicación**: `src/components/MetricCard.tsx`
 - **Responsabilidad**: Visualizar un KPI (Indicador Clave de Desempeño) con tendencia.
-- **Uso (Props)**:
+
+**Uso (Props):**
+
 | Prop | Tipo | Descripción |
 | :--- | :--- | :--- |
 | `title` | `string` | Nombre de la métrica. |
@@ -15,6 +17,7 @@ Este documento mapea el sistema de componentes del proyecto, facilitando la reut
 | `change` | `string` (opcional) | Variación porcentual o numérica (ej: "+10%"). |
 | `icon` | `LucideIcon` | Icono representativo de `lucide-react`. |
 | `color` | `string` | Color hexadecimal para el acento visual del icono. |
+
 - **Estado**: Puramente visual (stateless).
 - **Dependencias**: `lucide-react`.
 
