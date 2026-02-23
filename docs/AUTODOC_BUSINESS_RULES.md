@@ -6,34 +6,32 @@ Este documento traduce la lógica condicional y las validaciones del código a p
 
 | Dominio | Condición Técnica (Código) | Regla de Negocio (Funcional) |
 | :--- | :--- | :--- |
-| **Visualización** | `change.startsWith('+')` | Los incrementos en métricas deben resaltarse en verde (positivo). |
-| **Visualización** | `!change.startsWith('+')` | Los decrementos en métricas deben resaltarse en rojo (negativo). |
-| **Logística** | `tendencia_subida > 0.30` | Si un producto supera el 30% de tendencia positiva, el sistema debe recomendar un envío a Mercado Envíos Full. |
-| **Inventario** | `stock_critico == true` | Los productos con bajo inventario deben disparar una alerta visual inmediata en el panel de notificaciones. |
-| **Ventas** | `ventas_hoy` | El dashboard debe totalizar y mostrar el monto transaccionado en el día corriente de forma prioritaria. |
+| **Visualización** | `change.startsWith('+')` | Los incrementos en métricas de rendimiento deben resaltarse visualmente en verde. |
+| **Visualización** | `!change.startsWith('+')` | Los decrementos o pérdidas en métricas deben resaltarse visualmente en rojo. |
+| **Logística** | `tendencia_subida > 0.30` | Si la demanda de un producto crece por encima del 30%, el sistema debe recomendar el uso de Mercado Envíos Full. |
+| **Inventario** | `stock_critico == true` | Los productos por debajo del umbral de seguridad deben generar alertas visuales de prioridad alta. |
+| **Ventas** | `ventas_hoy` | El sistema debe priorizar y centralizar el volumen transaccionado del día calendario actual. |
 
 ---
 
 ## 2. Definiciones de Estado y Niveles
 
-El sistema utiliza los siguientes umbrales y categorías para definir el estado del vendedor:
+El sistema utiliza los siguientes umbrales operativos para definir el estatus del vendedor:
 
-- **Estatus de Reputación**: Se definen niveles de servicio (ej: "Platinium") que afectan la visibilidad del vendedor. Actualmente mapeado como una métrica de estatus fijo.
-- **Eficiencia de Envío**: El sistema monitorea el porcentaje de efectividad de Mercado Envíos. Un valor del 98% se considera óptimo para mantener el estatus de la tienda.
-- **Tendencia de Mercado**: Calculada comparando el volumen de ventas actual contra periodos anteriores para predecir necesidades de stock.
+- **Estatus de Reputación**: Se definen niveles de servicio jerárquicos (ej. Platinium) que operan como indicadores de confianza para el comprador.
+- **Eficiencia de Despacho**: El sistema monitorea la efectividad de Mercado Envíos, estableciendo una meta de calidad del 98% para mantener el estatus de la tienda.
+- **Predicción de Tendencia**: Se calcula comparando el volumen de ventas en tiempo real contra promedios históricos para anticipar necesidades de almacenamiento.
 
 ---
 
 ## 3. Gobernanza de Reglas
 
-Actualmente, las fuentes de verdad de estas reglas se encuentran distribuidas en:
-- **`src/app/page.tsx`**: Define los umbrales de recomendación de la IA y los estatus de reputación.
-- **`src/components/MetricCard.tsx`**: Gobierna la lógica visual de representación de éxito o riesgo financiero.
+Las fuentes de verdad para estas políticas están centralizadas en:
+- **src/app/page.tsx**: Orquestación de umbrales para el asesor de inteligencia artificial.
+- **src/components/MetricCard.tsx**: Lógica visual para la representación de éxito o riesgo financiero.
 
 ---
 
 ## 4. Resumen de Políticas Críticas
 
-La política más crítica implementada actualmente es la **Proactividad Logística**: El sistema no solo informa del estado del stock, sino que interviene cuando detecta una oportunidad de mercado (tendencia > 30%) para asegurar la disponibilidad del producto en los centros de distribución de Mercado Libre.
-
-**Nota de Estilo**: Evitar el uso de iconos o emojis innecesarios en el documento final para mantener una estética profesional y limpia.
+La política central del laboratorio es la **Optimización Proactiva**. El sistema está diseñado para pasar de un modelo reactivo (donde el vendedor espera el quiebre de stock) a un modelo predictivo, donde la detección de una tendencia del 30% activa automáticamente una sugerencia de acción logística estratégica para maximizar las ventas.

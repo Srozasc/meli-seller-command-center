@@ -33,9 +33,9 @@ Este documento desglosa el stack tecnológico del proyecto, organizando las herr
 
 ## 2. Análisis de Mantenibilidad
 
-El proyecto se encuentra en un estado de **alta modernidad** (Edge of the Art). El uso de **Next.js 16** y **React 19** indica que el código está listo para las últimas optimizaciones de rendimiento y concurrencia. La adopción de **Tailwind CSS v4** asegura un pipeline de estilos extremadamente ligero y rápido.
+El proyecto se encuentra en un estado de alta modernidad. El uso de Next.js 16 y React 19 indica que el código está listo para las últimas optimizaciones de rendimiento. La adopción de Tailwind CSS v4 asegura un pipeline de estilos extremadamente ligero.
 
 ### Piezas Críticas para el Desarrollador
-- **App Router (Next.js 16)**: El desarrollador debe estar familiarizado con los Server Components para optimizar la carga.
-- **Framer Motion**: Es vital para mantener la sensación "Premium" de Mercado Libre; cualquier nuevo componente debería considerar su uso para animaciones.
-- **Recharts**: Es el estándar actual para el dashboard; se recomienda seguir su sintaxis composible para nuevos gráficos.
+- **App Router (Next.js 16)**: Uso de Server Components para optimización de carga.
+- **Framer Motion**: Vital para mantener la sensación premium de la marca.
+- **Recharts**: Estándar para el panel de analíticas.

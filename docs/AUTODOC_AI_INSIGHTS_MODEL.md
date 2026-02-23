@@ -31,17 +31,17 @@ graph LR
 ## 2. Definición del Modelo de Recomendación
 
 ### Criterios de Activación
-El "cerebro" del Advisor opera bajo un modelo reactivo-predictivo con los siguientes parámetros:
+El motor del Advisor opera bajo un modelo reactivo-predictivo con los siguientes parámetros:
 
 1.  **Detector de Oportunidades (Tendencia)**:
     - **Variable**: Evolución porcentual de ventas en SKUs específicos.
-    - **Umbral de Alerta**: > 30% de incremento proyectado.
-    - **Acción Sugerida**: Migrar inventario a centros de distribución de Mercado Libre (Modelo FULL) para asegurar fulfillment rápido.
+    - **Umbral de Alerta**: Crecimiento proyectado superior al 30%.
+    - **Acción Sugerida**: Migrar inventario a centros de distribución para asegurar fulfillment.
 
 2.  **Protector de Ventas (Stock)**:
-    - **Variable**: Velocidad de venta (Run rate) vs Stock disponible.
-    - **Umbral de Alerta**: Disponibilidad menor a 3 días de venta proyectada.
-    - **Acción Sugerida**: Reposición inmediata de SKUs detectados en el panel de alertas.
+    - **Variable**: Velocidad de venta vs inventario disponible.
+    - **Umbral de Alerta**: Baja disponibilidad crítica detectada.
+    - **Acción Sugerida**: Reposición inmediata de SKUs en el panel de alertas.
 
 ---
 
@@ -49,13 +49,11 @@ El "cerebro" del Advisor opera bajo un modelo reactivo-predictivo con los siguie
 
 | Insight | Razón de ser | Valor para el Vendedor |
 | :--- | :--- | :--- |
-| **Sugerir Envío a Full** | Evitar la pérdida de ventas ante un pico de demanda detectado por la IA. | Mayor exposición en el marketplace y delegación logística. |
-| **Alertas de Stock Crítico** | Mantener la continuidad operativa y evitar penalizaciones por "quiebre de stock". | Protección de la reputación del vendedor. |
+| **Sugerir Envío a Full** | Evitar la pérdida de ventas ante un pico de demanda detectado por la IA. | Mayor exposición y delegación logística técnica. |
+| **Alertas de Stock Crítico** | Mantener la continuidad operativa y evitar penalizaciones de servicio. | Protección de la reputación del vendedor. |
 
 ---
 
 ## 4. Resumen de Valor AI
 
-El AI Advisor actúa como un **Analista de Datos 24/7**. Su valor diferencial es la capacidad de conectar puntos que el vendedor podría ignorar (como una subida de tendencia silenciosa) y presentar una solución accionable en un solo click, transformando la gestión pasiva en una estrategia de crecimiento proactivo.
-
-**Nota de Estilo**: Evitar el uso de iconos o emojis innecesarios en el documento final para mantener una estética profesional y limpia.
+El AI Advisor actúa como un analista de datos persistente. Su valor es la capacidad de conectar puntos que podrían ser ignorados en la operación diaria, presentando soluciones accionables para transformar la gestión de la tienda en una estrategia de crecimiento.

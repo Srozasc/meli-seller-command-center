@@ -62,7 +62,7 @@ graph TD
 ### Anatomía del Proyecto
 - **Patrón**: Implementación moderna de Next.js centrada en componentes atómicos y de composición.
 - **Entry Point**: `src/app/page.tsx` es el nodo central donde converge la lógica del dashboard.
-- **Estética**: Basada en variables de CSS personalizadas en `globals.css` que definen la identidad visual de Mercado Libre.
+- **Estética**: Basada en variables de CSS personalizadas en `globals.css` que definen la paleta oficial de Mercado Libre.
 
 ## Quick Start (Scripts Identificados)
 

@@ -48,6 +48,4 @@ Flujos estándar de soporte a la operación diaria.
 ---
 
 ## 3. Resumen de Soporte
-Actualmente, el software soporta un ciclo completo de **visualización -> detección proactiva -> acción correctiva**, centrado especialmente en la eficiencia logística y el aprovechamiento de tendencias de mercado.
-
-**Nota de Estilo**: Evitar el uso de iconos o emojis innecesarios en el documento final para mantener una estética profesional y limpia.
+Actualmente, el software soporta un ciclo completo de visualización -> detección proactiva -> acción correctiva, centrado especialmente en la eficiencia logística y el aprovechamiento de tendencias de mercado.
