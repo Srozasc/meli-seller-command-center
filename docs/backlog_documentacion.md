@@ -2,7 +2,7 @@
 
 Este documento registra las visiones de documentación que retomaremos más adelante para expandir la Skill de Documentación Automática.
 
-## Opción A: Foco en Desarrolladores (El Arqueólogo Digital) [En Curso 🚀]
+## Opción A: Foco en Desarrolladores (El Arqueólogo Digital) [En Curso]
 **Propósito:** Deducir la intención y estructura técnica original de un proyecto para acelerar el "Onboarding".
 - **Top-Down Discovery:** Analizar archivos de configuración (`package.json`, `tsconfig.json`, `pom.xml`, etc.) para entender el stack tecnológico.
 - **Arquitectura de Alto Nivel:** Generar explicaciones sobre la organización del código (carpetas) y los puntos de entrada del sistema.

@@ -24,6 +24,7 @@ Este workflow identifica dónde comienza la ejecución y cómo se orquesta la ap
     - **Lista de Entry Points**: Con su ubicación y rol técnico.
     - **Flujo de Carga**: Breve descripción de la secuencia de inicialización.
     - **Configuraciones Globales**: Detalle de estilos o variables de entorno críticas.
+- **Nota de Estilo**: Evitar el uso de iconos o emojis innecesarios en el documento final para mantener una estética profesional y limpia.
 
 ### 4. Resumen
 - Indica al usuario cuáles son los "archivos cerebro" del proyecto.

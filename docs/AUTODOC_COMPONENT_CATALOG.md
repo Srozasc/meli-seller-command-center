@@ -1,4 +1,4 @@
-# AUTODOC: Component Catalog (Catálogo de Bloques UI) 🧩
+# AUTODOC: Component Catalog (Catálogo de Bloques UI)
 
 Este documento mapea el sistema de componentes del proyecto, facilitando la reutilización de piezas de interfaz ya desarrolladas.
 
@@ -50,6 +50,6 @@ Para integrar estos componentes en nuevas pantallas del laboratorio:
 
 ---
 
-### 🚀 Potencial de Reutilización
+### Potencial de Reutilización
 - **`MetricCard`**: Alta. Puede usarse en cualquier panel que requiera mostrar datos numéricos rápidos.
 - **`SalesChart`**: Media. Ideal para cualquier sección de analítica; se recomienda parametrizar la data en futuras iteraciones.

@@ -1,4 +1,4 @@
-# AUTODOC: Entry Points (Puntos de Entrada) 📍
+# AUTODOC: Entry Points (Puntos de Entrada)
 
 Este documento identifica y analiza los archivos críticos donde comienza la ejecución y se define la orquestación del sistema.
 
@@ -31,5 +31,5 @@ La aplicación sigue una secuencia de inicialización optimizada para Next.js:
 
 ---
 
-### 🧠 Archivos Cerebro
+### Archivos Cerebro
 Los archivos mencionados arriba constituyen el núcleo de la aplicación. Cualquier cambio en estos archivos tiene un impacto sistémico en el ruteo, el diseño o la lógica de negocio fundamental del laboratorio.

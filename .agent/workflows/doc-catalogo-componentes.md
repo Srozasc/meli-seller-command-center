@@ -20,6 +20,7 @@ Este workflow mapea el "Lego" del proyecto, identificando piezas listas para ser
 - El documento debe incluir:
     - **Fichas de Componentes**: Nombre, ubicación, responsabilidad y guía rápida de uso (Props). Las tablas de props deben estar separadas por una línea en blanco del texto anterior para asegurar su visualización.
     - **Guía de Reuso**: Instrucciones generales sobre cómo añadir nuevos elementos al sistema.
+- **Nota de Estilo**: Evitar el uso de iconos o emojis innecesarios en el documento final para mantener una estética profesional y limpia.
 
 ### 4. Resumen
 - Proporciona una lista rápida de los componentes con más potencial de reutilización.

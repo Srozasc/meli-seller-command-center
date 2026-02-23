@@ -1,29 +1,29 @@
-# AUTODOC: Dependencies (Inventario Tecnológico) 📦
+# AUTODOC: Dependencies (Inventario Tecnológico)
 
 Este documento desglosa el stack tecnológico del proyecto, organizando las herramientas por su función crítica en el sistema.
 
 ## 1. Inventario por Categoría
 
-### 🚀 Core Framework
+### Core Framework
 | Librería | Versión | Rol |
 | :--- | :--- | :--- |
 | **Next.js** | `16.1.6` | Motor de ruteo y rendering (App Router). |
 | **React** | `19.2.3` | Base para la construcción de la UI. |
 | **TypeScript** | `^5` | Lenguaje principal con tipado estático. |
 
-### ✨ UI & User Experience
+### UI & User Experience
 | Librería | Versión | Rol |
 | :--- | :--- | :--- |
 | **Tailwind CSS** | `^4` | Estilizado utility-first optimizado. |
 | **Framer Motion** | `^12.34.3` | Orquestación de animaciones y micro-interacciones. |
 | **Lucide React** | `^0.575.0` | Set de iconos vectoriales consistentes. |
 
-### 📊 Data & Visualización
+### Data & Visualización
 | Librería | Versión | Rol |
 | :--- | :--- | :--- |
 | **Recharts** | `^3.7.0` | Generación de gráficos reactivos y accesibles. |
 
-### 🛠️ DevOps & Quality
+### DevOps & Quality
 | Librería | Versión | Rol |
 | :--- | :--- | :--- |
 | **ESLint** | `^9` | Análisis estático y mantenimiento de estándares. |

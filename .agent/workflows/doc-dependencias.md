@@ -20,6 +20,7 @@ Este workflow desglosa el stack tecnológico para entender las herramientas que 
 - El documento debe incluir:
     - **Inventario por Categoría**: Tabla o lista detallando versión y rol de cada librería.
     - **Análisis de Mantenibilidad**: Nota sobre la modernidad de las versiones encontradas.
+- **Nota de Estilo**: Evitar el uso de iconos o emojis innecesarios en el documento final para mantener una estética profesional y limpia.
 
 ### 4. Resumen
 - Informa sobre el "peso" tecnológico del proyecto y si hay piezas críticas que el desarrollador deba conocer detalladamente.
