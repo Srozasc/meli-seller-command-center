@@ -17,7 +17,9 @@ Este workflow analiza las páginas y la interactividad para reconstruir los fluj
 - El documento debe incluir:
     - **Mapa de Flujos (Mermaid)**: Un diagrama de flujo que visualice la transición entre estados o páginas.
     - **Descripción de Pasos**: Explicación en lenguaje sencillo de lo que ocurre en cada punto del camino.
-- **Nota de Estilo**: Evitar el uso de iconos o emojis innecesarios en el documento final para mantener una estética profesional y limpia.
+
+### Instrucciones de Estilo (No incluir en el documento)
+- **Profesionalismo**: Evitar el uso de iconos o emojis innecesarios en el documento final para mantener una estética limpia y técnica.
 
 ### 4. Resumen
 - Indica al usuario cuáles son los caminos críticos que el software soporta actualmente.

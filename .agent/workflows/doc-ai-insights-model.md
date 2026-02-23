@@ -17,7 +17,9 @@ Este workflow analiza los componentes de IA para explicar cómo se generan los i
 - El documento debe incluir:
     - **Arquitectura del Advisor**: Diagrama (Mermaid) que muestre la entrada de datos -> proceso de decisión -> salida de recomendación.
     - **Catálogo de Insights**: Lista de recomendaciones posibles y su razón de ser.
-- **Nota de Estilo**: Evitar el uso de iconos o emojis innecesarios en el documento final para mantener una estética profesional y limpia.
+
+### Instrucciones de Estilo (No incluir en el documento)
+- **Profesionalismo**: Evitar el uso de iconos o emojis innecesarios en el documento final para mantener una estética limpia y técnica.
 
 ### 4. Resumen
 - Explica el valor diferencial que aporta la inteligencia artificial al flujo de trabajo del vendedor.

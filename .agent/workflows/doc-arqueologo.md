@@ -29,7 +29,9 @@ Este workflow está diseñado para realizar una ingeniería inversa rápida de u
     - **Architecture Diagram (Mermaid)**: Un diagrama de bloques o grafo (usando sintaxis `mermaid`) que visualice la relación entre componentes, páginas y el flujo de datos/estilos.
     - **Project Structure**: Árbol de directorios anotado con el propósito de cada carpeta (debe estar dentro de un bloque de código ```text para evitar colapsos de línea).
     - **Quick Start**: Basado en los scripts encontrados.
-- **Nota de Estilo**: Evitar el uso de iconos o emojis innecesarios en el documento final para mantener una estética profesional y limpia.
 
 ### 5. Resumen de Hallazgos
 - Proporciona un breve resumen en el chat sobre los puntos más sorprendentes o importantes encontrados en la arqueología del código.
+
+### Instrucciones de Estilo (No incluir en el documento)
+- **Profesionalismo**: Evitar el uso de iconos o emojis innecesarios en el documento final para mantener una estética limpia y técnica.

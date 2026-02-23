@@ -16,7 +16,9 @@ Este workflow asegura que todos los stakeholders hablen el mismo idioma al refer
 - Crea o actualiza `docs/AUTODOC_PRODUCT_GLOSSARY.md`.
 - El documento debe incluir:
     - **Glosario de Términos**: Lista alfabética de conceptos con su definición y contexto.
-- **Nota de Estilo**: Evitar el uso de iconos o emojis innecesarios en el documento final para mantener una estética profesional y limpia.
+
+### Instrucciones de Estilo (No incluir en el documento)
+- **Profesionalismo**: Evitar el uso de iconos o emojis innecesarios en el documento final para mantener una estética limpia y técnica.
 
 ### 4. Resumen
 - Confirma que el lenguaje del producto está alineado entre el código y el negocio.

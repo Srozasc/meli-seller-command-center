@@ -17,7 +17,9 @@ Este workflow traduce el código técnico (`if/else`, validaciones) a reglas de 
 - El documento debe incluir:
     - **Tabla de Reglas**: Columnas para "Condición Técnica" y "Regla de Negocio".
     - **Gobernanza**: Notas sobre dónde reside la fuente de verdad de estas reglas en el código.
-- **Nota de Estilo**: Evitar el uso de iconos o emojis innecesarios en el documento final para mantener una estética profesional y limpia.
+
+### Instrucciones de Estilo (No incluir en el documento)
+- **Profesionalismo**: Evitar el uso de iconos o emojis innecesarios en el documento final para mantener una estética limpia y técnica.
 
 ### 4. Resumen
 - Resalta las políticas de negocio más críticas que la aplicación está forzando actualmente.
